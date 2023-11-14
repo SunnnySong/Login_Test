@@ -9,12 +9,13 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>kakao3ae88c49d3fff00ea2b8edca74636972</string>
+				<string>kakao0ecce1ceedcc76ad499cfcab84ad4263</string>
 			</array>
 		</dict>
 	</array>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>kakaolink</string>
 		<string>kakaokompassauth</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
