@@ -14,6 +14,9 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func kakaoLoginButtonTapped(_ sender: Any) {
+        print("카카오 로그인 버튼 눌림")
+    }
+    
 }
 
