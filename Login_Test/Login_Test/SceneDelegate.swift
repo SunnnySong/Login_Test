@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KakaoSDKAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -17,6 +18,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+    }
+
+    // 카카오톡 로그인 과정 : 서비스앱 -> 카카오톡 이동 -> 사용자가 [동의하고 계속하기] 버튼을 누르거나 or 취소 버튼 -> 다시 서비스앱으로 이동
+    // 카카오톡에서 다시 서비스앱으로 돌아왔을 때, 카카오 로그인 처리를 정상적으로 완료하기 위해 handleOpenUrl() 추가
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        if let url = URLContexts.first?.url {
+            if (AuthApi.isKakaoTalkLoginUrl(url)) {
+                _ = AuthController.handleOpenUrl(url: url)
+            }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
