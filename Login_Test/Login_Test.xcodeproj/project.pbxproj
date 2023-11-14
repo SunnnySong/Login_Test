@@ -27,6 +27,7 @@
 		803AD2D62B03879400C9941E /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = 803AD2D52B03879400C9941E /* KakaoSDKTemplate */; };
 		803AD2D82B03879400C9941E /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 803AD2D72B03879400C9941E /* KakaoSDKUser */; };
 		803AD2DB2B03E7C600C9941E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AD2DA2B03E7C600C9941E /* AppCoordinator.swift */; };
+		803AD2E12B03E94A00C9941E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AD2E02B03E94A00C9941E /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		803AD2AC2AFE03C400C9941E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		803AD2B92B0360D000C9941E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		803AD2DA2B03E7C600C9941E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		803AD2E02B03E94A00C9941E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		803AD29D2AFE03C300C9941E /* Login_Test */ = {
 			isa = PBXGroup;
 			children = (
+				803AD2DF2B03E94000C9941E /* Coordinator */,
 				803AD2DE2B03E90700C9941E /* LoginScene */,
 				803AD2DD2B03E8FF00C9941E /* HomeScene */,
 				803AD2DC2B03E8DD00C9941E /* Application */,
@@ -119,6 +122,14 @@
 				803AD2A22AFE03C300C9941E /* LoginViewController.swift */,
 			);
 			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		803AD2DF2B03E94000C9941E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				803AD2E02B03E94A00C9941E /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 			files = (
 				803AD2A32AFE03C300C9941E /* LoginViewController.swift in Sources */,
 				803AD29F2AFE03C300C9941E /* AppDelegate.swift in Sources */,
+				803AD2E12B03E94A00C9941E /* Coordinator.swift in Sources */,
 				803AD2DB2B03E7C600C9941E /* AppCoordinator.swift in Sources */,
 				803AD2A12AFE03C300C9941E /* SceneDelegate.swift in Sources */,
 				803AD2BA2B0360D000C9941E /* HomeViewController.swift in Sources */,
