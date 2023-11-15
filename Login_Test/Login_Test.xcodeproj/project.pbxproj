@@ -90,14 +90,12 @@
 		803AD29D2AFE03C300C9941E /* Login_Test */ = {
 			isa = PBXGroup;
 			children = (
+				803AD2EC2B04C6DF00C9941E /* Resources */,
 				803AD2E52B04835700C9941E /* Login */,
 				803AD2DF2B03E94000C9941E /* Coordinator */,
 				803AD2DE2B03E90700C9941E /* LoginScene */,
 				803AD2DD2B03E8FF00C9941E /* HomeScene */,
 				803AD2DC2B03E8DD00C9941E /* Application */,
-				803AD2A42AFE03C300C9941E /* Main.storyboard */,
-				803AD2A72AFE03C400C9941E /* Assets.xcassets */,
-				803AD2A92AFE03C400C9941E /* LaunchScreen.storyboard */,
 				803AD2AC2AFE03C400C9941E /* Info.plist */,
 			);
 			path = Login_Test;
@@ -144,6 +142,16 @@
 				803AD2EA2B04874C00C9941E /* UserAuthenticationManager.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		803AD2EC2B04C6DF00C9941E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				803AD2A42AFE03C300C9941E /* Main.storyboard */,
+				803AD2A72AFE03C400C9941E /* Assets.xcassets */,
+				803AD2A92AFE03C400C9941E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
