@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
 
     @IBAction func kakaoLoginButtonTapped(_ sender: Any) {
         print("카카오 로그인 버튼 눌림")
-        loginManager.startKakaoLogin()
+        loginManager.loginKakao()
     }
 
 }

@@ -19,7 +19,7 @@ final class LoginManager {
 // MARK: 카카오톡/카카오 로그인
 extension LoginManager {
     
-    func startKakaoLogin() {
+    func loginKakao() {
         // 카카오톡 실행 가능 여부 확인
         if UserApi.isKakaoTalkLoginAvailable() {
             UserApi.shared.loginWithKakaoTalk { oauthToken, error in
@@ -41,6 +41,17 @@ extension LoginManager {
                     print("loginWithKakaoAccount() 성공")
                     print("oauthToken : \(oauthToken)")
                 }
+            }
+        }
+    }
+
+    func logoutKakao() {
+        UserApi.shared.logout { error in
+            if let error = error {
+                print(error)
+            }
+            else {
+                print("logout() 성공")
             }
         }
     }
