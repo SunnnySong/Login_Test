@@ -28,6 +28,8 @@
 		803AD2D82B03879400C9941E /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 803AD2D72B03879400C9941E /* KakaoSDKUser */; };
 		803AD2DB2B03E7C600C9941E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AD2DA2B03E7C600C9941E /* AppCoordinator.swift */; };
 		803AD2E12B03E94A00C9941E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AD2E02B03E94A00C9941E /* Coordinator.swift */; };
+		803AD2E72B04838800C9941E /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AD2E62B04838800C9941E /* LoginManager.swift */; };
+		803AD2EB2B04874C00C9941E /* UserAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803AD2EA2B04874C00C9941E /* UserAuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		803AD2B92B0360D000C9941E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		803AD2DA2B03E7C600C9941E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		803AD2E02B03E94A00C9941E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		803AD2E62B04838800C9941E /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		803AD2EA2B04874C00C9941E /* UserAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		803AD29D2AFE03C300C9941E /* Login_Test */ = {
 			isa = PBXGroup;
 			children = (
+				803AD2E52B04835700C9941E /* Login */,
 				803AD2DF2B03E94000C9941E /* Coordinator */,
 				803AD2DE2B03E90700C9941E /* LoginScene */,
 				803AD2DD2B03E8FF00C9941E /* HomeScene */,
@@ -130,6 +135,15 @@
 				803AD2E02B03E94A00C9941E /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		803AD2E52B04835700C9941E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				803AD2E62B04838800C9941E /* LoginManager.swift */,
+				803AD2EA2B04874C00C9941E /* UserAuthenticationManager.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +238,10 @@
 				803AD29F2AFE03C300C9941E /* AppDelegate.swift in Sources */,
 				803AD2E12B03E94A00C9941E /* Coordinator.swift in Sources */,
 				803AD2DB2B03E7C600C9941E /* AppCoordinator.swift in Sources */,
+				803AD2EB2B04874C00C9941E /* UserAuthenticationManager.swift in Sources */,
 				803AD2A12AFE03C300C9941E /* SceneDelegate.swift in Sources */,
 				803AD2BA2B0360D000C9941E /* HomeViewController.swift in Sources */,
+				803AD2E72B04838800C9941E /* LoginManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

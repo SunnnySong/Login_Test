@@ -6,9 +6,10 @@
 //
 
 import UIKit
-import KakaoSDKUser
 
 class LoginViewController: UIViewController {
+
+    private let loginManager = LoginManager.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,26 +18,7 @@ class LoginViewController: UIViewController {
 
     @IBAction func kakaoLoginButtonTapped(_ sender: Any) {
         print("카카오 로그인 버튼 눌림")
-        self.startKakaoLogin()
+        loginManager.startKakaoLogin()
     }
 
 }
-
-// MARK: 카카오톡 로그인
-extension LoginViewController {
-
-    private func startKakaoLogin() {
-        if UserApi.isKakaoTalkLoginAvailable() {
-            UserApi.shared.loginWithKakaoTalk { oauthToken, error in
-                if let error = error {
-                    print(error)
-                } else {
-                    print("loginWithKakaoTalk() success.")
-                    print("oauthToken : \(oauthToken)")
-                }
-            }
-        }
-    }
-
-}
-
